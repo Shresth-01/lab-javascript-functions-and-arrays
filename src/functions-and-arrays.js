@@ -51,13 +51,13 @@ function add(arr){
     else if (typeof arr[index] == 'string') {
       sum += arr[index].length;
     }
-    else if (typeof arr[index] == true) {
+    else if (arr[index] == true) {
       sum +=1;
     }
-    else if (typeof arr[index] == false) {
+    else if (arr[index] == false) {
       sum +=0;
     }
-    else throw Error('unsupported data type (object or array) present in the array');
+    else throw Error('Unsupported data type sir or ma\'am');
     }
   return sum;
 }
